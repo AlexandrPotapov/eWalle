@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct People {
+struct People: Codable, PeopleCellViewModel {
+  let id: Int
   let name: String
-  let icon: String
+  let email: String
+  let profileImage: String
+  let location: String
 }
